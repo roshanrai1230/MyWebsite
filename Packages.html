@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parrot Green Navbar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  </head>
+  <body>
+    <!-- Particles Container -->
+    <div id="particles-js"></div>
+
+    <div class="top-bar">Raise a Ticket | Need Help?</div>
+
+    <header class="navbar">
+      <div class="container">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="nav-menu" class="nav-menu">
+          <div class="logo">
+            <img src="image/logo_png.png" alt="Logo" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="know_me.html">Know Me</a></li>
+            <li class="dropdown">
+              <a href="#" onclick="toggleDropdown(event)">Services ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="Web_Development.html">Web Development</a></li>
+                <li><a href="Web_Designing.html">Web Designing</a></li>
+                <li><a href="Web_Application.html">Web Application</a></li>
+                <li><a href="seo.html">SEO</a></li>
+                <li>
+                  <a href="Wordpress_Development.html">Wordpress Development</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav-right">
+            <div class="search-box">
+              <input type="text" placeholder="Search..." />
+              <button>🔍</button>
+            </div>
+            <a href="Packages.html" class="btn-gradient">Packages</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="background.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Main Section -->
+    <section class="pricing-section">
+      <div class="content">
+        <h1>Our Website Packages</h1>
+        <div class="cards">
+          <div class="card starter">
+            <h2>Static</h2>
+            <p class="price">$120</p>
+            <ul>
+              <li>Home Page with Flash Headers</li>
+              <li>8 to 10 website pages, including home page</li>
+              <li>Contact form</li>
+              <li>Photo Gallery</li>
+              <li>Your logo , Graphics & Banners</li>
+              <li>Meta tags for each page</li>
+              <li>FREE Facebook account and fan page set-up</li>
+              <li>FREE Twitter account set-up</li>
+              <li>FREE maintenance for first 3 months</li>
+              <li>Free Web Hosting 100 MB and set-up</li>
+              <li>Full Optimizations of All pages</li>
+              <li>All Website Dynamic</li>
+            </ul>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+
+          <div class="card standard">
+            <h2>Dynamic</h2>
+            <p class="price">$250</p>
+            <ul>
+              <li>Home Page with Flash Headers</li>
+              <li>12 to 15 website pages, including home page</li>
+              <li>Contact form</li>
+              <li>Photo Gallery</li>
+              <li>Your logo, Graphics & Banners</li>
+              <li>Unlimited text (within reason)</li>
+              <li>Meta tags for each page</li>
+              <li>Blog set up on self</li>
+              <li>FREE maintenance for first 3 months</li>
+              <li>Free Web Hosting 150 MB and set-up</li>
+              <li>Free social media account set-up</li>
+              <li>All Website Dynamic</li>
+            </ul>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+
+          <div class="card enhanced">
+            <h2>E-Commerce</h2>
+            <p class="price">$200</p>
+            <ul>
+              <li>Shopping cart, Payment gateway</li>
+              <li>Invoice Management</li>
+              <li>10 email IDs</li>
+              <li>Google Analytics Integration</li>
+              <li>Social Media Sharing Options</li>
+              <li>Hosting (1 Year Free)</li>
+              <li>Domain (1 Year Free) and more</li>
+            </ul>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="girl-image">
+        <img src="girl.png" alt="girl" />
+      </div> -->
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-box logo-box">
+          <img src="logo.png" alt="Mandy Logo" class="footer-logo" />
+          <p>
+            We are a team of passionate, creative web designers and
+            result-oriented professionals that aim to deliver cutting-edge web
+            design and development services to fulfill the goals and objectives
+            of our clients.
+          </p>
+        </div>
+
+        <div class="footer-box">
+          <h4>Our Company</h4>
+          <ul>
+            <li><a href="#">› Home</a></li>
+            <li><a href="#">› Who We Are</a></li>
+            <li><a href="#">› Web Design</a></li>
+            <li><a href="#">› Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">› Web Design Packages</a></li>
+            <li><a href="#">› Web Development Packages</a></li>
+            <li><a href="#">› Portfolio</a></li>
+            <li><a href="#">› Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h4>Office</h4>
+          <p>
+            C 210 A, 3rd Floor, Phase 8B, Industrial Area, Sector 74,<br />Sahibzada
+            Ajit Singh Nagar, Punjab 160071
+          </p>
+          <p>+91-9872-774871</p>
+          <p>
+            <a href="mailto:sales@mandywebdesign.com"
+              >sales@mandywebdesign.com</a
+            >
+          </p>
+          <p>
+            <a href="mailto:careers@mandywebdesign.com"
+              >careers@mandywebdesign.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">© All Rights Reserved | Mandy Web Design</div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Load particles config -->
+    <script>
+      particlesJS.load("particles-js", "particles.json", function () {
+        console.log("Particles.js config loaded");
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

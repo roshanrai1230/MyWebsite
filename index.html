@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parrot Green Navbar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top-bar">Raise a Ticket | Need Help?</div>
+
+    <header class="navbar">
+      <div class="container">
+        <!-- <div class="logo">
+          <img src="https://via.placeholder.com/120x40?text=LOGO" alt="Logo" />
+        </div> -->
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <nav id="nav-menu" class="nav-menu">
+          <div class="logo">
+            <img src="image/logo_png.png" alt="Logo" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="know_me.html">Know Me</a></li>
+            <li class="dropdown">
+              <a href="#" onclick="toggleDropdown(event)">Services ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="Web_Development.html">Web Development</a></li>
+                <li><a href="Web_Designing.html">Web Designing</a></li>
+                <li><a href="Web_Application.html">Web Application</a></li>
+                <li><a href="seo.html">SEO</a></li>
+                <li>
+                  <a href="Wordpress_Development.html">Wordpress Development</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav-right">
+            <div class="search-box">
+              <input type="text" placeholder="Search..." />
+              <button>🔍</button>
+            </div>
+            <a href="Packages.html" class="btn-gradient">Packages</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Navbar _End -->
+
+    <!-- Slider-Section -->
+
+    <section class="hero-slider">
+      <div class="slider">
+        <img
+          src="https://blog.zegocloud.com/wp-content/uploads/2024/03/types-of-web-development-services.jpg"
+          alt="Slide 1"
+          class="slide active"
+        />
+        <img
+          src="https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg"
+          alt="Slide 2"
+          class="slide"
+        />
+        <img
+          src="https://www.creative-tim.com/blog/content/images/size/w960/2022/01/which-development-job-is-right-for-you.jpg"
+          alt="Slide 3"
+          class="slide"
+        />
+        <img
+          src="https://webdevelopmentislamabad.pk/wp-content/uploads/2024/11/Is-Web-Development-Dying-in-2025.jpg"
+          alt="Slide 4"
+          class="slide"
+        />
+        <img
+          src="https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg"
+          alt="Slide 5"
+          class="slide"
+        />
+        <img
+          src="https://intersmart.ae/wp-content/uploads/2024/04/The-Essential-Web-Development-Tools-Every-Developer-Should-Know.png"
+          alt="Slide 6"
+          class="slide"
+        />
+      </div>
+      <div class="overlay">
+        <h1>Welcome to Our Website</h1>
+        <p>Beautiful and Responsive Hero Section with Auto Slider</p>
+      </div>
+    </section>
+
+    <!-- Slider-Section-End -->
+
+    <!-- ✅ Counter Section -->
+    <section class="counter-section">
+      <div class="counter-box">
+        <h2 data-count="100">0</h2>
+        <p>Apps Delivered</p>
+      </div>
+      <div class="counter-box">
+        <h2 data-count="50">0</h2>
+        <p>Happy Clients</p>
+      </div>
+      <div class="counter-box">
+        <h2 data-count="5">0</h2>
+        <p>Years Experience</p>
+      </div>
+      <div class="counter-box">
+        <h2 data-count="15">0</h2>
+        <p>Expert Developers</p>
+      </div>
+    </section>
+    <!-- ✅ Counter Section End -->
+
+    <!-- Website Packages -->
+    <section class="cards-section">
+      <h2>Website Packages</h2>
+      <div class="cards-container">
+        <!-- Static Website Card -->
+        <div class="flip-card" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Static Website</h3>
+              <p>Simple informational site</p>
+            </div>
+            <div class="flip-card-back">
+              <h4>Static Website</h4>
+              <p>💰 ₹999 per page</p>
+              <p>✅ Fast Loading</p>
+              <p>✅ Responsive Design</p>
+              <p>✅ SEO Ready</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Website Card -->
+        <div class="flip-card" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Dynamic Website</h3>
+              <p>Content changes dynamically</p>
+            </div>
+            <div class="flip-card-back">
+              <h4>Dynamic Website</h4>
+              <p>💰 ₹1499 per page</p>
+              <p>✅ Admin Panel</p>
+              <p>✅ CMS Integration</p>
+              <p>✅ Responsive & SEO</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- E-Commerce Website Card -->
+        <div class="flip-card" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>E-Commerce Website</h3>
+              <p>Online store functionality</p>
+            </div>
+            <div class="flip-card-back">
+              <h4>E-Commerce Website</h4>
+              <p>💰 ₹4999 onwards</p>
+              <p>✅ Cart System</p>
+              <p>✅ Payment Gateway</p>
+              <p>✅ Admin Dashboard</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Website Packages END -->
+
+    <!-- ✅ Development Process Section -->
+    <section class="process-section">
+      <div class="section-heading">
+        <p>DEVELOPMENT PROCESS</p>
+        <h2>Simple steps to transform your idea into reality</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="icon">💡</div>
+          <h3>01</h3>
+          <h4>Discovery</h4>
+          <p>Transform your ideas into a solid project strategy.</p>
+        </div>
+        <div class="process-card">
+          <div class="icon">🛠️</div>
+          <h3>02</h3>
+          <h4>Design</h4>
+          <p>Create beautiful and user-friendly interfaces.</p>
+        </div>
+        <div class="process-card">
+          <div class="icon">💻</div>
+          <h3>03</h3>
+          <h4>Development</h4>
+          <p>Build powerful solutions using latest tech.</p>
+        </div>
+        <div class="process-card">
+          <div class="icon">🚀</div>
+          <h3>04</h3>
+          <h4>Launch</h4>
+          <p>Deploy and maintain your perfect solution.</p>
+        </div>
+      </div>
+    </section>
+    <!-- ✅ Development Process Section End -->
+
+    <!-- ✅ Industry Expertise Section -->
+    <section class="industry-section">
+      <h3 class="section-title">INDUSTRY EXPERTISE</h3>
+      <p class="section-subtitle">
+        We build apps across various industry verticals
+      </p>
+
+      <div class="industry-grid">
+        <div class="industry-card">
+          <i class="fa fa-shopping-cart icon"></i>
+          <h4>E-Commerce</h4>
+          <p>Online shopping apps with secure payment integration</p>
+        </div>
+        <div class="industry-card">
+          <i class="fa fa-heartbeat icon" style="color: #e63946"></i>
+          <h4>Healthcare</h4>
+          <p>Telemedicine and health monitoring applications</p>
+        </div>
+        <div class="industry-card">
+          <i class="fa fa-graduation-cap icon" style="color: #00b4d8"></i>
+          <h4>Education</h4>
+          <p>Interactive learning and educational platforms</p>
+        </div>
+        <div class="industry-card">
+          <i class="fa fa-building icon" style="color: #00b4a8"></i>
+          <h4>Real Estate</h4>
+          <p>Interactive property Listing platform</p>
+        </div>
+        <div class="industry-card">
+          <i class="fa fa-briefcase icon" style="color: #333"></i>
+          <h4>Business Website</h4>
+          <p>Platforms to list your business details</p>
+        </div>
+        <div class="industry-card">
+          <i class="fa fa-plane icon" style="color: #0077ff"></i>
+          <h4>Tourism</h4>
+          <p>Interactive platforms for your tourism business</p>
+        </div>
+      </div>
+    </section>
+    <!-- ✅ Industry Expertise Section End -->
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-box logo-box">
+          <img src="logo.png" alt="Mandy Logo" class="footer-logo" />
+          <p>
+            We are a team of passionate, creative web designers and
+            result-oriented professionals that aim to deliver cutting-edge web
+            design and development services to fulfill the goals and objectives
+            of our clients.
+          </p>
+        </div>
+
+        <div class="footer-box">
+          <h4>Our Company</h4>
+          <ul>
+            <li><a href="#">› Home</a></li>
+            <li><a href="#">› Who We Are</a></li>
+            <li><a href="#">› Web Design</a></li>
+            <li><a href="#">› Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">› Web Design Packages</a></li>
+            <li><a href="#">› Web Development Packages</a></li>
+            <li><a href="#">› Portfolio</a></li>
+            <li><a href="#">› Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h4>Office</h4>
+          <p>
+            C 210 A, 3rd Floor, Phase 8B, Industrial Area, Sector 74,<br />Sahibzada
+            Ajit Singh Nagar, Punjab 160071
+          </p>
+          <p>+91-9872-774871</p>
+          <p>
+            <a href="mailto:sales@mandywebdesign.com"
+              >sales@mandywebdesign.com</a
+            >
+          </p>
+          <p>
+            <a href="mailto:careers@mandywebdesign.com"
+              >careers@mandywebdesign.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">© All Rights Reserved | Mandy Web Design</div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  </body>
+</html>
