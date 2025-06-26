@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parrot Green Navbar</title>
+    <title>
+      Infrabyte | Freelance Web Developer for Modern Business Websites
+    </title>
+    <link rel="icon" type="image/png" href="image/Logo.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -11,25 +14,26 @@
     />
   </head>
   <body>
-    <div class="top-bar">Raise a Ticket | Need Help?</div>
-
     <header class="navbar">
       <div class="container">
-        <!-- <div class="logo">
-          <img src="https://via.placeholder.com/120x40?text=LOGO" alt="Logo" />
-        </div> -->
+        <div class="logo">
+          <img src="image/logo.png" alt="Logo" />
+        </div>
 
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-        <nav id="nav-menu" class="nav-menu">
-          <div class="logo">
-            <img src="image/logo_png.png" alt="Logo" />
-          </div>
+        <nav class="nav-menu" id="nav-menu">
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="know_me.html">Know Me</a></li>
             <li class="dropdown">
-              <a href="#" onclick="toggleDropdown(event)">Services ▾</a>
+              <a href="#" onclick="toggleDropdown(event)"
+                >Services <span class="dropdown-icon">▾</span></a
+              >
               <ul class="dropdown-menu">
                 <li><a href="Web_Development.html">Web Development</a></li>
                 <li><a href="Web_Designing.html">Web Designing</a></li>
@@ -42,43 +46,33 @@
             </li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="Packages.html" class="btn-gradient">Get Started</a>
+            </li>
           </ul>
-
-          <div class="nav-right">
-            <div class="search-box">
-              <input type="text" placeholder="Search..." />
-              <button>🔍</button>
-            </div>
-            <a href="Packages.html" class="btn-gradient">Packages</a>
-          </div>
         </nav>
       </div>
     </header>
 
     <!-- Navbar _End -->
     <!-- Contact -->
+
     <section class="contact-section">
       <div class="contact-form">
         <h2>Get In Touch With Our Experts To Turn Your Idea Into Reality.</h2>
-        <form>
-          <input type="text" placeholder="Name*" required />
-          <input type="email" placeholder="Email*" required />
-          <input type="tel" placeholder="Phone Number" />
-          <textarea placeholder="Message"></textarea>
-          <label>Attach Your Requirement</label>
-          <input type="file" />
-          <div class="captcha">
-            <img
-              src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
-              alt="captcha"
-            />
-          </div>
-          <button type="submit">Submit</button>
+        <form id="contact-form">
+          <input type="text" name="from_name" placeholder="Name*" required />
+          <input type="email" name="reply_to" placeholder="Email*" required />
+          <input type="tel" name="phone" placeholder="Phone Number*" required />
+          <textarea
+            name="message"
+            placeholder="Your Message*"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
         </form>
-        <p class="powered-by">
-          ❤️ <a href="#">Create your own free forms</a> to generate leads from
-          your website.
-        </p>
+
+        <p class="powered-by"></p>
       </div>
 
       <div class="contact-info">
@@ -102,58 +96,96 @@
     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-box logo-box">
-          <img src="logo.png" alt="Mandy Logo" class="footer-logo" />
+          <img src="image/logo.png" alt="Web_Designing" class="footer-logo" />
           <p>
-            We are a team of passionate, creative web designers and
-            result-oriented professionals that aim to deliver cutting-edge web
-            design and development services to fulfill the goals and objectives
-            of our clients.
+            Infrabyte is a passionate team of web designers and developers
+            delivering modern, responsive websites tailored to your business
+            goals.
           </p>
         </div>
 
         <div class="footer-box">
           <h4>Our Company</h4>
           <ul>
-            <li><a href="#">› Home</a></li>
-            <li><a href="#">› Who We Are</a></li>
-            <li><a href="#">› Web Design</a></li>
-            <li><a href="#">› Contact Us</a></li>
+            <li><a href="index.html">› Home</a></li>
+            <li><a href="know_me.html">› Who We Are</a></li>
+            <li><a href="Web_Designing.html">› Web Design</a></li>
+            <li><a href="contact.html">› Contact Us</a></li>
           </ul>
         </div>
 
         <div class="footer-box">
           <h4>Resources</h4>
           <ul>
-            <li><a href="#">› Web Design Packages</a></li>
-            <li><a href="#">› Web Development Packages</a></li>
-            <li><a href="#">› Portfolio</a></li>
-            <li><a href="#">› Blog</a></li>
+            <li><a href="particles.json">› Web Design Packages</a></li>
+            <li>
+              <a href="Web_Development.html">› Web Development Packages</a>
+            </li>
+
+            <li><a href="blog.html">› Blog</a></li>
           </ul>
         </div>
 
         <div class="footer-box">
           <h4>Office</h4>
           <p>
-            C 210 A, 3rd Floor, Phase 8B, Industrial Area, Sector 74,<br />Sahibzada
-            Ajit Singh Nagar, Punjab 160071
+            Phase 8B, Industrial Area, Sector 74,<br />Sahibzada Ajit Singh
+            Nagar, Punjab 160071
           </p>
-          <p>+91-9872-774871</p>
+          <p>+91-77400-37264</p>
+
           <p>
-            <a href="mailto:sales@mandywebdesign.com"
-              >sales@mandywebdesign.com</a
-            >
-          </p>
-          <p>
-            <a href="mailto:careers@mandywebdesign.com"
-              >careers@mandywebdesign.com</a
+            <a href="mailto:rairoshan69883@gmail.com"
+              >rairoshan69883@gmail.com</a
             >
           </p>
         </div>
       </div>
-      <div class="footer-bottom">© All Rights Reserved | Mandy Web Design</div>
+      <div class="footer-bottom">© All Rights Reserved | Infrabyte</div>
     </footer>
 
     <!-- Footer End -->
+    <!-- Load EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script>
+      // Initialize EmailJS with your User ID
+      (function () {
+        emailjs.init("rairoshan69883@gmail.com"); // 🔁 Replace this
+      })();
+
+      // Listen for form submission
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Stop default form submit
+
+          // Basic validation check
+          const name = this.from_name.value.trim();
+          const email = this.reply_to.value.trim();
+          const phone = this.phone.value.trim();
+          const message = this.message.value.trim();
+
+          if (!name || !email || !phone || !message) {
+            alert("Please fill out all fields.");
+            return;
+          }
+
+          // Send via EmailJS
+          emailjs
+            .sendForm("rairoshan69883@gmail.com", "YOUR_TEMPLATE_ID", this)
+            .then(
+              function () {
+                alert("✅ Message sent successfully!");
+                document.getElementById("contact-form").reset(); // Clear form
+              },
+              function (error) {
+                console.error("EmailJS Error:", error);
+                alert("❌ Failed to send message. Please try again.");
+              }
+            );
+        });
+    </script>
 
     <script src="script.js"></script>
   </body>

@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parrot Green Navbar</title>
+    <title>
+      Infrabyte | Freelance Web Developer for Modern Business Websites
+    </title>
+    <link rel="icon" type="image/png" href="image/Logo.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -11,25 +14,26 @@
     />
   </head>
   <body>
-    <div class="top-bar">Raise a Ticket | Need Help?</div>
-
     <header class="navbar">
       <div class="container">
-        <!-- <div class="logo">
-          <img src="https://via.placeholder.com/120x40?text=LOGO" alt="Logo" />
-        </div> -->
+        <div class="logo">
+          <img src="image/logo.png" alt="Logo" />
+        </div>
 
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-        <nav id="nav-menu" class="nav-menu">
-          <div class="logo">
-            <img src="image/logo_png.png" alt="Logo" />
-          </div>
+        <nav class="nav-menu" id="nav-menu">
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="know_me.html">Know Me</a></li>
             <li class="dropdown">
-              <a href="#" onclick="toggleDropdown(event)">Services ▾</a>
+              <a href="#" onclick="toggleDropdown(event)"
+                >Services <span class="dropdown-icon">▾</span></a
+              >
               <ul class="dropdown-menu">
                 <li><a href="Web_Development.html">Web Development</a></li>
                 <li><a href="Web_Designing.html">Web Designing</a></li>
@@ -42,20 +46,63 @@
             </li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="Packages.html" class="btn-gradient">Get Started</a>
+            </li>
           </ul>
-
-          <div class="nav-right">
-            <div class="search-box">
-              <input type="text" placeholder="Search..." />
-              <button>🔍</button>
-            </div>
-            <a href="Packages.html" class="btn-gradient">Packages</a>
-          </div>
         </nav>
       </div>
     </header>
-
     <!-- Navbar _End -->
+    <!-- MAIN -->
+    <header>
+      <img src="image/web-app.jpg" alt="Web Application" />
+    </header>
+
+    <div class="section">
+      <h2>Why Web Applications are Powerful</h2>
+      <p>
+        Web Applications help businesses automate workflows, provide dynamic
+        user interaction, and offer platform independence. They allow real-time
+        data processing, user management, and are accessible anytime, anywhere.
+      </p>
+      <p>
+        <strong>Benefits of Web Applications:</strong><br />
+        - Scalable and dynamic features<br />
+        - Centralized database management<br />
+        - Accessible across all devices<br />
+        - Secure and user role-based systems
+      </p>
+      <a href="#contact" class="cta-btn">🚀 Build Your Web Application Now</a>
+
+      <h2 style="margin-top: 40px">What I Use to Build Web Apps</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>React.js</h3>
+          <p>Front-end library for building fast and responsive interfaces.</p>
+        </div>
+        <div class="card">
+          <h3>Node.js & Express</h3>
+          <p>
+            Backend framework to create scalable REST APIs and server logic.
+          </p>
+        </div>
+        <div class="card">
+          <h3>MongoDB</h3>
+          <p>NoSQL database for storing app data efficiently and securely.</p>
+        </div>
+        <div class="card">
+          <h3>Firebase</h3>
+          <p>Authentication, hosting, and real-time database support.</p>
+        </div>
+        <div class="card">
+          <h3>JWT & OAuth</h3>
+          <p>Secure user authentication using modern token-based methods.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN PAGE END -->
 
     <!-- Contact  End-->
 
@@ -63,55 +110,52 @@
     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-box logo-box">
-          <img src="logo.png" alt="Mandy Logo" class="footer-logo" />
+          <img src="image/logo.png" alt="Web_Designing" class="footer-logo" />
           <p>
-            We are a team of passionate, creative web designers and
-            result-oriented professionals that aim to deliver cutting-edge web
-            design and development services to fulfill the goals and objectives
-            of our clients.
+            Infrabyte is a passionate team of web designers and developers
+            delivering modern, responsive websites tailored to your business
+            goals.
           </p>
         </div>
 
         <div class="footer-box">
           <h4>Our Company</h4>
           <ul>
-            <li><a href="#">› Home</a></li>
-            <li><a href="#">› Who We Are</a></li>
-            <li><a href="#">› Web Design</a></li>
-            <li><a href="#">› Contact Us</a></li>
+            <li><a href="index.html">› Home</a></li>
+            <li><a href="know_me.html">› Who We Are</a></li>
+            <li><a href="Web_Designing.html">› Web Design</a></li>
+            <li><a href="contact.html">› Contact Us</a></li>
           </ul>
         </div>
 
         <div class="footer-box">
           <h4>Resources</h4>
           <ul>
-            <li><a href="#">› Web Design Packages</a></li>
-            <li><a href="#">› Web Development Packages</a></li>
-            <li><a href="#">› Portfolio</a></li>
-            <li><a href="#">› Blog</a></li>
+            <li><a href="particles.json">› Web Design Packages</a></li>
+            <li>
+              <a href="Web_Development.html">› Web Development Packages</a>
+            </li>
+
+            <li><a href="blog.html">› Blog</a></li>
           </ul>
         </div>
 
         <div class="footer-box">
           <h4>Office</h4>
           <p>
-            C 210 A, 3rd Floor, Phase 8B, Industrial Area, Sector 74,<br />Sahibzada
-            Ajit Singh Nagar, Punjab 160071
+            Phase 8B, Industrial Area, Sector 74,<br />Sahibzada Ajit Singh
+            Nagar, Punjab 160071
           </p>
-          <p>+91-9872-774871</p>
+          <p>+91-77400-37264</p>
+
           <p>
-            <a href="mailto:sales@mandywebdesign.com"
-              >sales@mandywebdesign.com</a
-            >
-          </p>
-          <p>
-            <a href="mailto:careers@mandywebdesign.com"
-              >careers@mandywebdesign.com</a
+            <a href="mailto:rairoshan69883@gmail.com"
+              >rairoshan69883@gmail.com</a
             >
           </p>
         </div>
       </div>
-      <div class="footer-bottom">© All Rights Reserved | Mandy Web Design</div>
+      <div class="footer-bottom">© All Rights Reserved | Infrabyte</div>
     </footer>
 
     <!-- Footer End -->

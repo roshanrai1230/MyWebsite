@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parrot Green Navbar</title>
+    <title>
+      Infrabyte | Freelance Web Developer for Modern Business Websites
+    </title>
+    <link rel="icon" type="image/png" href="image/Logo.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -16,20 +19,26 @@
     <!-- Particles Container -->
     <div id="particles-js"></div>
 
-    <div class="top-bar">Raise a Ticket | Need Help?</div>
-
-    <header class="navbar">
+     <header class="navbar">
       <div class="container">
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <nav id="nav-menu" class="nav-menu">
-          <div class="logo">
-            <img src="image/logo_png.png" alt="Logo" />
-          </div>
+        <div class="logo">
+          <img src="image/logo.png" alt="Logo" />
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="know_me.html">Know Me</a></li>
             <li class="dropdown">
-              <a href="#" onclick="toggleDropdown(event)">Services ▾</a>
+              <a href="#" onclick="toggleDropdown(event)"
+                >Services <span class="dropdown-icon">▾</span></a
+              >
               <ul class="dropdown-menu">
                 <li><a href="Web_Development.html">Web Development</a></li>
                 <li><a href="Web_Designing.html">Web Designing</a></li>
@@ -42,146 +51,187 @@
             </li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="Packages.html" class="btn-gradient">Get Started</a>
+            </li>
           </ul>
-
-          <div class="nav-right">
-            <div class="search-box">
-              <input type="text" placeholder="Search..." />
-              <button>🔍</button>
-            </div>
-            <a href="Packages.html" class="btn-gradient">Packages</a>
-          </div>
         </nav>
       </div>
     </header>
 
-    <!-- Video Background -->
-    <video autoplay muted loop playsinline class="bg-video">
-      <source src="background.mp4" type="video/mp4" />
-      Your browser does not support HTML5 video.
-    </video>
+
+
+   
 
     <!-- Main Section -->
-    <section class="pricing-section">
-      <div class="content">
-        <h1>Our Website Packages</h1>
-        <div class="cards">
-          <div class="card starter">
-            <h2>Static</h2>
-            <p class="price">$120</p>
-            <ul>
-              <li>Home Page with Flash Headers</li>
-              <li>8 to 10 website pages, including home page</li>
-              <li>Contact form</li>
-              <li>Photo Gallery</li>
-              <li>Your logo , Graphics & Banners</li>
-              <li>Meta tags for each page</li>
-              <li>FREE Facebook account and fan page set-up</li>
-              <li>FREE Twitter account set-up</li>
-              <li>FREE maintenance for first 3 months</li>
-              <li>Free Web Hosting 100 MB and set-up</li>
-              <li>Full Optimizations of All pages</li>
-              <li>All Website Dynamic</li>
-            </ul>
-            <a href="#" class="btn">Buy Now</a>
-          </div>
+   
 
-          <div class="card standard">
-            <h2>Dynamic</h2>
-            <p class="price">$250</p>
-            <ul>
-              <li>Home Page with Flash Headers</li>
-              <li>12 to 15 website pages, including home page</li>
-              <li>Contact form</li>
-              <li>Photo Gallery</li>
-              <li>Your logo, Graphics & Banners</li>
-              <li>Unlimited text (within reason)</li>
-              <li>Meta tags for each page</li>
-              <li>Blog set up on self</li>
-              <li>FREE maintenance for first 3 months</li>
-              <li>Free Web Hosting 150 MB and set-up</li>
-              <li>Free social media account set-up</li>
-              <li>All Website Dynamic</li>
-            </ul>
-            <a href="#" class="btn">Buy Now</a>
-          </div>
 
-          <div class="card enhanced">
-            <h2>E-Commerce</h2>
-            <p class="price">$200</p>
-            <ul>
-              <li>Shopping cart, Payment gateway</li>
-              <li>Invoice Management</li>
-              <li>10 email IDs</li>
-              <li>Google Analytics Integration</li>
-              <li>Social Media Sharing Options</li>
-              <li>Hosting (1 Year Free)</li>
-              <li>Domain (1 Year Free) and more</li>
-            </ul>
-            <a href="#" class="btn">Buy Now</a>
-          </div>
-        </div>
-      </div>
+  <div class="pricing-container">
+    <!-- Startup Plan -->
+    <div class="plan">
+      <div class="plan-title">Startup Plan</div>
+      <div class="price">₹5,999/-</div>
+       <a href="contact.html" class="cta-btn">🚀 Choose Plan</a>
+      <ul>
+        <li><i class="fas fa-check"></i>4 Page Modern Website</li>
+        <li><i class="fas fa-check"></i>Dynamic Website</li>
+        <li><i class="fas fa-check"></i>Domain Configuration</li>
+        <li><i class="fas fa-check"></i>Hosting Configuration</li>
+        <li><i class="fas fa-check"></i>2 Business Emails</li>
+        <li><i class="fas fa-check"></i>100% Mobile Friendly</li>
+        <li><i class="fas fa-check"></i>Website Admin Panel</li>
+        <li><i class="fas fa-check"></i>Unlimited Images & Videos</li>
+        <li class="section-title">Functionality</li>
+        <li><i class="fas fa-check"></i>Live Chat</li>
+        <li><i class="fas fa-check"></i>Contact Form</li>
+        <li><i class="fas fa-check"></i>Click to Call Button</li>
+        <li><i class="fas fa-check"></i>Whatsapp Integration</li>
+        <li><i class="fas fa-check"></i>SEO Ready Website</li>
+        <li class="section-title">Website Security</li>
+        <li><i class="fas fa-check"></i>Free SSL Certificate</li>
+        <li><i class="fas fa-check"></i>Technical Support 1 Year</li>
+      </ul>
+    </div>
 
-      <!-- <div class="girl-image">
-        <img src="girl.png" alt="girl" />
-      </div> -->
-    </section>
+    <!-- Classic Plan -->
+    <div class="plan">
+      <div class="popular-tag">POPULAR</div>
+      <div class="plan-title">Classic Plan</div>
+      <div class="price">₹9,999/-</div>
+       <a href="contact.html" class="cta-btn">🚀 Choose Plan</a>
+      <ul>
+        <li><i class="fas fa-check"></i>8 Page Modern Website</li>
+        <li><i class="fas fa-check"></i>Dynamic Website</li>
+        <li><i class="fas fa-check"></i>Domain Configuration</li>
+        <li><i class="fas fa-check"></i>Hosting Configuration</li>
+        <li><i class="fas fa-check"></i>3 Business Emails</li>
+        <li><i class="fas fa-check"></i>100% Mobile Friendly</li>
+        <li><i class="fas fa-check"></i>Website Admin Panel</li>
+        <li><i class="fas fa-check"></i>Unlimited Images & Videos</li>
+        <li class="section-title">Functionality</li>
+        <li><i class="fas fa-check"></i>Live Chat</li>
+        <li><i class="fas fa-check"></i>Contact Form</li>
+        <li><i class="fas fa-check"></i>Click to Call Button</li>
+        <li><i class="fas fa-check"></i>Whatsapp Integration</li>
+        <li><i class="fas fa-check"></i>SEO Ready Website</li>
+        <li><i class="fas fa-check"></i>Payment Integration</li>
+        <li class="section-title">Website Security</li>
+        <li><i class="fas fa-check"></i>Free SSL Certificate</li>
+        <li><i class="fas fa-check"></i>Technical Support 1 Year</li>
+      </ul>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="plan">
+      <div class="plan-title">Premium Plan</div>
+      <div class="price">₹11,999/-</div>
+      <a href="contact.html" class="cta-btn">🚀 Choose Plan</a>
+      <ul>
+        <li><i class="fas fa-check"></i>12 Page Modern Website</li>
+        <li><i class="fas fa-check"></i>Dynamic Website</li>
+        <li><i class="fas fa-check"></i>Domain Configuration</li>
+        <li><i class="fas fa-check"></i>Hosting Configuration</li>
+        <li><i class="fas fa-check"></i>5 Business Emails</li>
+        <li><i class="fas fa-check"></i>100% Mobile Friendly</li>
+        <li><i class="fas fa-check"></i>Website Admin Panel</li>
+        <li><i class="fas fa-check"></i>Unlimited Images & Videos</li>
+        <li class="section-title">Functionality</li>
+        <li><i class="fas fa-check"></i>Live Chat</li>
+        <li><i class="fas fa-check"></i>Contact Form</li>
+        <li><i class="fas fa-check"></i>Click to Call Button</li>
+        <li><i class="fas fa-check"></i>Whatsapp Integration</li>
+        <li><i class="fas fa-check"></i>SEO Ready Website</li>
+        <li><i class="fas fa-check"></i>Woocommerce Functions</li>
+        <li><i class="fas fa-check"></i>Payment Integration</li>
+        <li class="section-title">Website Security</li>
+        <li><i class="fas fa-check"></i>Free SSL Certificate</li>
+        <li><i class="fas fa-check"></i>Technical Support 1 Year</li>
+      </ul>
+    </div>
+
+    <!-- Custom Plan -->
+    <div class="plan">
+      <div class="plan-title">Custom Plan</div>
+      <div class="price">₹ ???</div>
+      <a href="contact.html" class="cta-btn">🚀 Choose Plan</a>
+      <ul>
+        <li><i class="fas fa-check"></i>Pages: As Per Requirement</li>
+        <li><i class="fas fa-check"></i>Dynamic Website</li>
+        <li><i class="fas fa-check"></i>Domain Configuration</li>
+        <li><i class="fas fa-check"></i>Hosting Configuration</li>
+        <li><i class="fas fa-check"></i>5 Business Emails</li>
+        <li><i class="fas fa-check"></i>100% Mobile Friendly</li>
+        <li><i class="fas fa-check"></i>Website Admin Panel</li>
+        <li><i class="fas fa-check"></i>Unlimited Images & Videos</li>
+        <li class="section-title">Functionality</li>
+        <li><i class="fas fa-check"></i>Live Chat</li>
+        <li><i class="fas fa-check"></i>Contact Form</li>
+        <li><i class="fas fa-check"></i>Click to Call Button</li>
+        <li><i class="fas fa-check"></i>Whatsapp Integration</li>
+        <li><i class="fas fa-check"></i>SEO Ready Website</li>
+        <li><i class="fas fa-check"></i>Woocommerce Functions</li>
+        <li><i class="fas fa-check"></i>Payment Integration</li>
+        <li class="section-title">Website Security</li>
+        <li><i class="fas fa-check"></i>Free SSL Certificate</li>
+        <li><i class="fas fa-check"></i>Technical Support 1 Year</li>
+           </ul>
+           </div>
+           </div>
+     
+     </section>
 
     <!-- Footer -->
     <!-- Footer -->
-    <footer class="main-footer">
+     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-box logo-box">
-          <img src="logo.png" alt="Mandy Logo" class="footer-logo" />
+          <img src="image/logo.png" alt="Web_Designing" class="footer-logo" />
           <p>
-            We are a team of passionate, creative web designers and
-            result-oriented professionals that aim to deliver cutting-edge web
-            design and development services to fulfill the goals and objectives
-            of our clients.
+            Infrabyte is a passionate team of web designers and developers
+            delivering modern, responsive websites tailored to your business
+            goals.
           </p>
         </div>
 
         <div class="footer-box">
           <h4>Our Company</h4>
           <ul>
-            <li><a href="#">› Home</a></li>
-            <li><a href="#">› Who We Are</a></li>
-            <li><a href="#">› Web Design</a></li>
-            <li><a href="#">› Contact Us</a></li>
+            <li><a href="index.html">› Home</a></li>
+            <li><a href="know_me.html">› Who We Are</a></li>
+            <li><a href="Web_Designing.html">› Web Design</a></li>
+            <li><a href="contact.html">› Contact Us</a></li>
           </ul>
         </div>
 
         <div class="footer-box">
           <h4>Resources</h4>
           <ul>
-            <li><a href="#">› Web Design Packages</a></li>
-            <li><a href="#">› Web Development Packages</a></li>
-            <li><a href="#">› Portfolio</a></li>
-            <li><a href="#">› Blog</a></li>
+            <li><a href="particles.json">› Web Design Packages</a></li>
+            <li>
+              <a href="Web_Development.html">› Web Development Packages</a>
+            </li>
+
+            <li><a href="blog.html">› Blog</a></li>
           </ul>
         </div>
 
         <div class="footer-box">
           <h4>Office</h4>
           <p>
-            C 210 A, 3rd Floor, Phase 8B, Industrial Area, Sector 74,<br />Sahibzada
-            Ajit Singh Nagar, Punjab 160071
+            Phase 8B, Industrial Area, Sector 74,<br />Sahibzada Ajit Singh
+            Nagar, Punjab 160071
           </p>
-          <p>+91-9872-774871</p>
+          <p>+91-77400-37264</p>
+
           <p>
-            <a href="mailto:sales@mandywebdesign.com"
-              >sales@mandywebdesign.com</a
-            >
-          </p>
-          <p>
-            <a href="mailto:careers@mandywebdesign.com"
-              >careers@mandywebdesign.com</a
+            <a href="mailto:rairoshan69883@gmail.com"
+              >rairoshan69883@gmail.com</a
             >
           </p>
         </div>
       </div>
-      <div class="footer-bottom">© All Rights Reserved | Mandy Web Design</div>
+      <div class="footer-bottom">© All Rights Reserved | Infrabyte</div>
     </footer>
 
     <!-- Footer End -->

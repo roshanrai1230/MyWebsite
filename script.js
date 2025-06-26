@@ -84,3 +84,39 @@ AOS.init({
 
 
 
+// Contact Page 
+ (function () {
+    emailjs.init("rairoshan69883@gmail.com"); // 🔁 Replace this
+  })();
+
+  // // Listen for form submission
+  // document
+  //   .getElementById("contact-form")
+  //   .addEventListener("submit", function (e) {
+  //     e.preventDefault(); // Stop default form submit
+
+  //     // Basic validation check
+  //     const name = this.from_name.value.trim();
+  //     const email = this.reply_to.value.trim();
+  //     const phone = this.phone.value.trim();
+  //     const message = this.message.value.trim();
+
+  //     if (!name || !email || !phone || !message) {
+  //       alert("Please fill out all fields.");
+  //       return;
+  //     }
+
+  //     // Send via EmailJS
+  //     emailjs
+  //       .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+  //       .then(
+  //         function () {
+  //           alert("✅ Message sent successfully!");
+  //           document.getElementById("contact-form").reset(); // Clear form
+  //         },
+  //         function (error) {
+  //           console.error("EmailJS Error:", error);
+  //           alert("❌ Failed to send message. Please try again.");
+  //         }
+  //       );
+  //   });

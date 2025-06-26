@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parrot Green Navbar</title>
+    <title>
+      Infrabyte | Freelance Web Developer for Modern Business Websites
+    </title>
+    <link rel="icon" type="image/png" href="image/Logo.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -11,25 +14,26 @@
     />
   </head>
   <body>
-    <div class="top-bar">Raise a Ticket | Need Help?</div>
-
     <header class="navbar">
       <div class="container">
-        <!-- <div class="logo">
-          <img src="https://via.placeholder.com/120x40?text=LOGO" alt="Logo" />
-        </div> -->
+        <div class="logo">
+          <img src="image/logo.png" alt="Logo" />
+        </div>
 
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-        <nav id="nav-menu" class="nav-menu">
-          <div class="logo">
-            <img src="image/logo_png.png" alt="Logo" />
-          </div>
+        <nav class="nav-menu" id="nav-menu">
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="know_me.html">Know Me</a></li>
             <li class="dropdown">
-              <a href="#" onclick="toggleDropdown(event)">Services ▾</a>
+              <a href="#" onclick="toggleDropdown(event)"
+                >Services <span class="dropdown-icon">▾</span></a
+              >
               <ul class="dropdown-menu">
                 <li><a href="Web_Development.html">Web Development</a></li>
                 <li><a href="Web_Designing.html">Web Designing</a></li>
@@ -42,76 +46,144 @@
             </li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="Packages.html" class="btn-gradient">Get Started</a>
+            </li>
           </ul>
-
-          <div class="nav-right">
-            <div class="search-box">
-              <input type="text" placeholder="Search..." />
-              <button>🔍</button>
-            </div>
-            <a href="Packages.html" class="btn-gradient">Packages</a>
-          </div>
         </nav>
       </div>
     </header>
 
     <!-- Navbar _End -->
 
-    <!-- Contact  End-->
+    <!-- Body -->
+    <div class="hero-section">
+      <h1>WordPress Website Benefits & Considerations</h1>
+    </div>
+
+    <div class="container_1">
+      <h2>Why WordPress is a Go-To CMS</h2>
+      <p>
+        WordPress is a flexible, widely-used Content Management System that
+        allows businesses and individuals to launch powerful websites quickly
+        and efficiently. With its rich ecosystem of themes and plugins, users
+        enjoy limitless customization options without needing to code everything
+        from scratch.
+      </p>
+
+      <a href="#contact" class="cta-btn"
+        >📌 Plan Your WordPress Website Today</a
+      >
+
+      <h2>Advantages of WordPress</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Customizable Design</h3>
+          <p>
+            Choose from thousands of themes and customize layouts to match your
+            brand.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Plugin Ecosystem</h3>
+          <p>
+            Add contact forms, SEO tools, galleries, and more with free &
+            premium plugins.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Responsive Ready</h3>
+          <p>
+            Most WordPress themes are built mobile-first to ensure seamless
+            responsiveness.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Easy Content Management</h3>
+          <p>
+            Create, edit and organize pages and posts easily without technical
+            knowledge.
+          </p>
+        </div>
+      </div>
+
+      <h2 style="margin-top: 50px">Disadvantages to Consider</h2>
+      <div class="grid">
+        <div class="card red-border">
+          <h3>Maintenance Overhead</h3>
+          <p>
+            WordPress sites need regular updates and security monitoring to stay
+            safe.
+          </p>
+        </div>
+        <div class="card red-border">
+          <h3>Plugin Conflicts</h3>
+          <p>
+            Using too many plugins can lead to compatibility issues and slow
+            performance.
+          </p>
+        </div>
+        <div class="card red-border">
+          <h3>Learning Curve for Customization</h3>
+          <p>
+            Customizing themes or writing functions may still require developer
+            skills.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Body Page END -->
 
     <!-- Footer -->
     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-box logo-box">
-          <img src="logo.png" alt="Mandy Logo" class="footer-logo" />
+          <img src="image/logo.png" alt="Web_Designing" class="footer-logo" />
           <p>
-            We are a team of passionate, creative web designers and
-            result-oriented professionals that aim to deliver cutting-edge web
-            design and development services to fulfill the goals and objectives
-            of our clients.
+            Infrabyte is a passionate team of web designers and developers
+            delivering modern, responsive websites tailored to your business
+            goals.
           </p>
         </div>
 
         <div class="footer-box">
           <h4>Our Company</h4>
           <ul>
-            <li><a href="#">› Home</a></li>
-            <li><a href="#">› Who We Are</a></li>
-            <li><a href="#">› Web Design</a></li>
-            <li><a href="#">› Contact Us</a></li>
+            <li><a href="index.html">› Home</a></li>
+            <li><a href="know_me.html">› Who We Are</a></li>
+            <li><a href="Web_Designing.html">› Web Design</a></li>
+            <li><a href="contact.html">› Contact Us</a></li>
           </ul>
         </div>
 
         <div class="footer-box">
           <h4>Resources</h4>
           <ul>
-            <li><a href="#">› Web Design Packages</a></li>
-            <li><a href="#">› Web Development Packages</a></li>
-            <li><a href="#">› Portfolio</a></li>
-            <li><a href="#">› Blog</a></li>
+            <li><a href="particles.json">› Web Design Packages</a></li>
+            <li>
+              <a href="Web_Development.html">› Web Development Packages</a>
+            </li>
+
+            <li><a href="blog.html">› Blog</a></li>
           </ul>
         </div>
 
         <div class="footer-box">
           <h4>Office</h4>
           <p>
-            C 210 A, 3rd Floor, Phase 8B, Industrial Area, Sector 74,<br />Sahibzada
-            Ajit Singh Nagar, Punjab 160071
+            Phase 8B, Industrial Area, Sector 74,<br />Sahibzada Ajit Singh
+            Nagar, Punjab 160071
           </p>
-          <p>+91-9872-774871</p>
+          <p>+91-77400-37264</p>
+
           <p>
-            <a href="mailto:sales@mandywebdesign.com"
-              >sales@mandywebdesign.com</a
-            >
-          </p>
-          <p>
-            <a href="mailto:careers@mandywebdesign.com"
-              >careers@mandywebdesign.com</a
+            <a href="mailto:rairoshan69883@gmail.com"
+              >rairoshan69883@gmail.com</a
             >
           </p>
         </div>
       </div>
-      <div class="footer-bottom">© All Rights Reserved | Mandy Web Design</div>
+      <div class="footer-bottom">© All Rights Reserved | Infrabyte</div>
     </footer>
 
     <!-- Footer End -->
